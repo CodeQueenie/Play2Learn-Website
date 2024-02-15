@@ -1,0 +1,40 @@
+a {
+    color: red;
+  }
+  
+  a[href='#top'],
+  h1 {
+    color: limegreen;
+  }
+  
+  nav a {
+    color: hsl(300, 20%, 50%);
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  #cinderella h2 {
+    color: hsl(56, 100%, 45%);
+  }
+  
+  #alice h2 {
+    color: #f60;
+  }
+  
+  #naughtyboy h2 {
+    color: #e96df2;
+  }
+  
+  p {
+    color: rgb(51, 102, 102);
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+    font-size: .9em;
+  }
+  
+  img {
+    opacity: .5;
+  }

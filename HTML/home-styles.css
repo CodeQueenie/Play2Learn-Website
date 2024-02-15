@@ -1,0 +1,106 @@
+/* -- HOME STYLES -- */
+
+/* HAPPY SECTION*/
+
+main {
+    border: gray solid;
+    height: 370px;
+    margin: auto;
+    width: 500px;
+}
+
+#happy {
+    text-align: none;
+    width: 100%;
+}
+
+/* GAMES SECTION */
+
+#games {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4rem 1fr;
+}
+  
+#games h2 {
+    grid-column: 1 / -1;
+}
+  
+#games article {
+    background: lightgray;
+    display: grid;
+    gap: 0 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4rem 1fr;
+    margin: 1rem;
+    padding: 1rem;
+}
+  
+#games article h3 {
+    grid-column: 1 / 2;
+    text-align: left;
+}
+  
+#games article a {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+}
+
+
+#games article p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#games>p {
+  grid-column: 1 / -1;
+}
+  
+
+  
+
+#purpose {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4rem 1fr 1fr 1fr;
+  }
+  
+  #purpose h2,
+  #purpose p,
+  #purpose ol {
+    grid-column: 1 / 3;
+  }
+  
+  #purpose p {
+    text-align: center;
+  }
+  
+  #purpose ol {
+    margin: auto;
+  }
+  
+  #purpose aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+  }
+  
+  #purpose p.disclosure {
+    grid-column: 2 / 3;
+  }
+  
+  /* PURPOSE SECTION MID-SIZED SCREEN */
+  
+  @media (max-width: 830px) {
+    #purpose {
+      display: block;
+    }
+  }
+  
+  /* PURPOSE SECTION SMALL SCREEN */
+  
+  @media (max-width: 500px) {
+    #purpose ol {
+     width: 75%;
+    }
+  }
