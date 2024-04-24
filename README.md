@@ -1,10 +1,10 @@
-# Welcome to the Play2Learn Website - Dive Into the Math Facts Practice Game!
+# Welcome to the Play2Learn Website - Math Facts Practice Game
 
 ## Hello There!
-This is my very first creation from my journey as a Full Stack Developer student. I put together a math game on an educational website all built from scratch. This Math Facts Practice game is just the beginning.
+This is my very first creation from my journey as a Full Stack Developer student. I put together a math game on an educational website all built from scratch.
 
 ## How to Get Started
-Whether you're all about clicking through a graphical interface or you're a keyboard warrior who loves the command line, starting this game is a breeze. Here's how:
+Whether you're all about clicking through or you're a keyboard warrior who loves the command line, starting this game is a breeze. Here's how:
 
 ### If You're Using a Web Browser:
 1. **Finding the Game**: First things first, locate `index.html` in your project folder.
@@ -22,4 +22,4 @@ Whether you're all about clicking through a graphical interface or you're a keyb
    - If you're on Windows, type `start index.html`, macOS users go with `open index.html`, and on Linux, it's `xdg-open index.html`.
 
 ## Wrapping Up
-So, no matter if you're team mouse-click or team command-line, these steps will get you into the game in no time. Pick what feels right, dive in, and here's hoping you have a blast learning and playing. Happy mathing, and happy coding!
+So, no matter if you're team mouse-click or team command-line, these steps will get you into the game in no time. Pick what feels right - Happy mathing, and happy coding!
