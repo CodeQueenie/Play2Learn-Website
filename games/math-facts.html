@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Math Facts Practice</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <h1 class="logo">Play2Learn Logo</h1>
+            <ul>
+                <li><a href="../index.html">Home | </a></li>
+                <li class="contains">
+                    <a href="#">Games | </a>
+                    <ul>
+                        <li><a href="../games/anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="../games/math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About | </a></li>
+                <li><a href="../login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Math Facts Practice</h1>
+    <h2>Addition</h2>
+
+    <div id="operation-select-container">
+        <label for="operation-select" class="operation-select-label">Operation:</label>
+        <select id="operation-select" class="operation-select">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        <button id="go" class="green-box" onclick="startGame()">Go</button>
+    </div>
+
+    <div class="instructions">
+        <ol>
+            <li>Select Operation.</li>
+            <li>Press <b>Go.</b></li>
+            <li>How many problems can you solve in 30 seconds?</li>
+        </ol>
+    </div>
+    <div id="question" class="hidden"></div>
+    <input type="text" id="answer" class="input-field hidden" maxlength="1" autofocus>
+    <div id="feedback" class="hidden"></div>
+  
+    <div id="calculator" class="calculator">
+        <div class="green-box" onclick="appendToAnswer(1)">1</div>
+        <div class="green-box" onclick="appendToAnswer(2)">2</div>
+        <div class="green-box" onclick="appendToAnswer(3)">3</div>
+        <div class="green-box" onclick="appendToAnswer(4)">4</div>
+        <div class="green-box" onclick="appendToAnswer(5)">5</div>
+        <div class="green-box" onclick="appendToAnswer(6)">6</div>
+        <div class="green-box" onclick="appendToAnswer(7)">7</div>
+        <div class="green-box" onclick="appendToAnswer(8)">8</div>
+        <div class="green-box" onclick="appendToAnswer(9)">9</div>
+        <div class="green-box" onclick="appendToAnswer(0)">0</div>
+        <div class="green-box" onclick="clearAnswer()" id="clear-all">clear</div>
+      </div>
+  
+      <p id="time-left"></p>
+  
+      <div id="final-score"></div>
+      <div id="score" class="hidden"><b>Score:</b> 0</div>
+  
+      <button id="play-again" style="display:none; background-color: rgb(42, 181, 24); color: white; border-radius: 10px; padding: 10px 20px; text-align: center; margin: auto; cursor: pointer;">Play Again</button>
+      <script src="scripts.js"></script>
+      <footer>
+        <hr>
+        <div class="footer">
+            <span class="copyright">© 2020 Play2Learn</span>
+            <nav class="lower-nav">
+                <a href="../contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
