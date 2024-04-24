@@ -22,4 +22,4 @@ Whether you're all about clicking through or you're a keyboard warrior who loves
    - If you're on Windows, type `start index.html`, macOS users go with `open index.html`, and on Linux, it's `xdg-open index.html`.
 
 ## Wrapping Up
-So, no matter if you're team mouse-click or team command-line, these steps will get you into the game in no time. Pick what feels right - Happy mathing, and happy coding!
+So, no matter if you're team mouse-click or team command-line, these steps will get you into the game in no time. Pick what feels right - happy mathing, and happy coding!
