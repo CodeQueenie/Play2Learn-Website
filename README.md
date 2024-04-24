@@ -1,4 +1,4 @@
-# Welcome to the Math Facts Practice Game README
+# Welcome to the Play2Learn Website - Math Facts Practice Game README
 
 ## Introduction
 This project brings to life a Math game developed as a cornerstone project for my Full Stack Software Developer Course. Embedded within an educational website designed from the ground up, this game forms an integral part of my assignment for the software developer class. The website's primary aim is to offer a platform that hosts a variety of educational games, with the Math Facts Practice game being among the first to debut.
