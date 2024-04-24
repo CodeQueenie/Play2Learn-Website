@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Math Facts Practice</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Play2Learn Logo</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Games
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../games/anagram-hunt.html">Anagram Hunt</a>
+                        <a class="dropdown-item" href="../games/math-facts.html">Math Facts Practice</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-column align-items-center">
+        <h1>Math Facts Practice</h1>
+        <h2>Addition</h2>
+      </div>
+      
+
+    <div id="operation-select-container">
+        <label for="operation-select" class="operation-select-label">Operation:</label>
+        <select id="operation-select" class="operation-select">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        <button id="go" class="green-box" onclick="startGame()">Go</button>
+    </div>
+
+    <div class="instructions">
+        <ol>
+            <li>Select Operation.</li>
+            <li>Press <b>Go.</b></li>
+            <li>How many problems can you solve in 30 seconds?</li>
+        </ol>
+    </div>
+
+    <div id="question" class="hidden"></div>
+
+    <input type="text" id="answer" class="input-field hidden" maxlength="1" autofocus>
+    <div id="feedback" class="hidden"></div>
+
+    <div id="calculator" class="calculator">
+        <div class="green-box" onclick="appendToAnswer(1)">1</div>
+        <div class="green-box" onclick="appendToAnswer(2)">2</div>
+        <div class="green-box" onclick="appendToAnswer(3)">3</div>
+        <div class="green-box" onclick="appendToAnswer(4)">4</div>
+        <div class="green-box" onclick="appendToAnswer(5)">5</div>
+        <div class="green-box" onclick="appendToAnswer(6)">6</div>
+        <div class="green-box" onclick="appendToAnswer(7)">7</div>
+        <div class="green-box" onclick="appendToAnswer(8)">8</div>
+        <div class="green-box" onclick="appendToAnswer(9)">9</div>
+        <div class="green-box" onclick="appendToAnswer(0)">0</div>
+        <div class="green-box" onclick="clearAnswer()" id="clear-all">clear</div>
+    </div>
+
+    <p id="time-left"></p>
+
+    <div id="final-score"></div>
+    <div id="score" class="hidden"><b>Score:</b> 0</div>
+
+    <button id="play-again"
+        style="display:none; background-color: rgb(42, 181, 24); color: white; border-radius: 10px; padding: 10px 20px; text-align: center; margin: auto; cursor: pointer;">
+        Play Again
+    </button>
+
+    <footer class="footer bg-light mt-5 p-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <span>&copy; 2020 Play2Learn</span>
+            </div>
+            <div class="col-6 text-end">
+              <a href="../HTML/contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+              <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-square-twitter"></i></a>
+              <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+

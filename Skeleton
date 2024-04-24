@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Play2Learn</title> 
+  </head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Play2Learn Logo</h1>
+      <ul>
+        <li><a href="index.html">Home | </a></li> 
+        <li class="contains"><a href="#">Games | </a> 
+          <ul>
+            <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+            <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+          </ul></li>
+        <li><a href="about.html">About | </a></li> 
+        <li><a href="login.html">Login</a></li> 
+      </ul>
+    </nav>  
+  </header>
+  <main id="indexMain">
+    <section id="happy">
+      <h4>Happy Clients Say...</h4>
+      <div id="quote"></div>
+      <div id="author"></div>
+    </section>
+
+    <section id="games">
+      <article>
+        <h3>Anagram Hunt</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <a href="games/anagram-hunt.html"><button>Play</button></a>
+      </article>
+      <article>
+        <h3>Math Facts Practice</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <a href="games/math-facts.html"><button>Play</button></a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="footer">
+      <span class="copyright">© 2020 Play2Learn</span>
+      <nav class="lower-nav">
+        <a href="../HTML/contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+  <title>Play2Learn</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Play2Learn Logo</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li> 
+        <li class="contains">
+          <a href="#">Games</a> 
+          <ul>
+            <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+            <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p><strong>Contact Us</strong></p>
+    <form action="javascript:alert('Form Submitted')">
+      <input type="email" name="email" placeholder="Your email">
+      <input type="text" name="subject" placeholder="Subject">
+      <input type="text" name="message" placeholder="Message">
+      <button type="submit">SEND</button>
+    </form>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="footer">
+      <span class="copyright">© 2020 Play2Learn</span>
+      <nav class="lower-nav">
+        <a href="../HTML/contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
+
+html, body {
+    font: 16px "helv-neue",arial,sans-serif;
+    color: white;
+    margin: auto;
+    background: #ff6900;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  /* HEADER */
+  nav {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    height: 60px;
+    padding: 0 20px;
+  }
+  
+  h1, .logo {
+    color: white;
+    margin-right: 800px; 
+  }
+  
+  nav ul, .lower-nav {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    font-size: small;
+  }
+  
+  nav li, .lower-nav li {
+    display: inline-block;
+  }
+  
+  nav a, .lower-nav a {
+    display: block;
+    padding: 0.1rem;
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover, .lower-nav a:hover {
+    color: rgb(4, 222, 55);
+  }
+  
+  li.contains ul {
+    display: none;
+    position: absolute;
+  }
+  
+  li.contains:hover ul {
+    display: block;
+    background: transparent;
+  }
+  
+  
+  li.contains li, .lower-nav li {
+    float: left; 
+    font-size: 0.9rem;
+  }
+  
+  /* LOWER NAV */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: small;
+    font-weight: 700;
+    padding: 3%;
+    width: 40%;
+    margin: 0 300px;
+  }
+  
+  hr {
+    margin-top: 30px;
+    margin-bottom: 3px;
+    width: 60%;
+  }
+  
+  /*Add the rest of your css here after cleaning*/
+  
+  
+  
+  .copyright {
+    font-size: 12px;
+    color: white;
+  }
+  
+  .lower-nav {
+    font-size: 16px;
+    list-style: none;
+  }
+  
+  .lower-nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer .lower-nav a,
+  footer .lower-nav a:visited {
+    color: rgb(32, 18, 18);
+    opacity: 0.6;
+    padding: 0.3rem;
+    text-decoration: none;
+  }
+  
+  footer .lower-nav i {
+    font-size: 2rem;
+  }
+  
+  footer .lower-nav a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
+  /*About*/
+  
+  .aboutus,
+  .about {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+  
+  /*Login/Register*/
+  
+  #login-container, #register-container {
+    width: 200px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="email"], input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: rgb(42, 181, 24);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(111, 203, 155);
+  }
+  
+  /* -- HOME STYLES -- */
+  
+  #indexMain {
+    display: block;
+    padding: 20px;
+    /* any additional styles specific to the index page */
+  }
+  
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* this centers content vertically */
+    align-items: center; /* this centers content horizontally */
+    height: 370px;
+    margin: auto;
+    width: 1000px;
+  }
+  
+  
+  #quote {
+    color: rgb(107, 82, 82);
+    font-style: italic;
+    background-color: #fff; r
+    padding: 10px; 
+    border-radius: 5px; 
+    height: 50%;
+  }
+  
+  
+  #author {
+  padding-top: 1rem;
+  position: absolute;
+  right: 25rem;
+  color: whitesmoke;
+  opacity: 75%;
+  }
+  
+  
+  /* GAMES SECTION */
+  
+  #games {
+  margin-top: 5em;
+  margin-right: 12em;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 5rem 2fr;
+  }
+  
+  
+  #games article {
+  margin: 0.5rem;
+  padding: 0rem;
+  }
+  
+  #games button {
+  margin-top: 0.5em;
+  margin-right: 10em;
+  float: right;
+  color: white;
+  background-color:  rgb(42, 181, 24);
+  border-radius: 0.5em;
+  font-size: small;
+  cursor: pointer;
+  }
+  
+  
+  #purpose {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4rem 1fr 1fr 1fr;
+  }
+  
+  #purpose h2,
+  #purpose p,
+  #purpose ol {
+    grid-column: 1 / 3;
+  }
+  
+  #purpose p {
+    text-align: center;
+  }
+  
+  #purpose ol {
+    margin: auto;
+  }
+  
+  #purpose aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+  }
+  
+  #purpose p.disclosure {
+    grid-column: 2 / 3;
+  }
+  
+  /* PURPOSE SECTION MID-SIZED SCREEN */
+  
+  @media (max-width: 830px) {
+    #purpose {
+      display: block;
+    }
+  }
+  
+  /* PURPOSE SECTION SMALL SCREEN */
+  
+  @media (max-width: 500px) {
+    #purpose ol {
+     width: 75%;
+    }
+  }
+  
+  /* Math Game */
+  
+  h1 {
+  font-size: 2em; 
+  color: black;
+  }
+  
+  .green-box {
+    background-color:  rgb(42, 181, 24);
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .input-field {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .feedback {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 10px;
+  }
+  
+  #calculator {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .instructions { 
+  margin: 5px 0;
+  padding: 0 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: rgb(93, 21, 21)
+  }
+  
+  #score,
+  #time-left {
+  font-weight: bold;
+  }
+  
+  #score .val,
+  #time-left .val {
+  text-decoration: underline;
+  font-weight: normal;
+  }
+  
+  #time-left {
+  color: #471617; 
+  }
+  
+  #final-score {
+  font-size: 40px; 
+  color: black; 
+  }
+  
+  #play-again {
+  cursor: pointer;
+  }
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Play2Learn</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">Play2Learn Logo</h1>
+        <ul>
+          <li>
+            <a href="index.html">Home | </a></li>
+          <li class="contains">
+            <a href="#">Games | </a>
+            <ul>
+              <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+              <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="about.html">About | </a></li>
+          <li>
+            <a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="aboutus">
+        <strong>About Us</strong>
+      </h2>
+      <p class="about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
+    </main>
+    <footer>
+      <hr>
+      <div class="footer">
+        <span class="copyright">© 2020 Play2Learn</span>
+        <nav class="lower-nav">
+          <a href="../HTML/contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Math Facts Practice</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <h1 class="logo">Play2Learn Logo</h1>
+            <ul>
+                <li><a href="../index.html">Home | </a></li>
+                <li class="contains">
+                    <a href="#">Games | </a>
+                    <ul>
+                        <li><a href="../games/anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="../games/math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About | </a></li>
+                <li><a href="../login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Math Facts Practice</h1>
+    <h2>Addition</h2>
+
+    <div id="operation-select-container">
+        <label for="operation-select" class="operation-select-label">Operation:</label>
+        <select id="operation-select" class="operation-select">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        <button id="go" class="green-box" onclick="startGame()">Go</button>
+    </div>
+
+    <div class="instructions">
+        <ol>
+            <li>Select Operation.</li>
+            <li>Press <b>Go.</b></li>
+            <li>How many problems can you solve in 30 seconds?</li>
+        </ol>
+    </div>
+    <div id="question" class="hidden"></div>
+    <input type="text" id="answer" class="input-field hidden" maxlength="1" autofocus>
+    <div id="feedback" class="hidden"></div>
+  
+    <div id="calculator" class="calculator">
+        <div class="green-box" onclick="appendToAnswer(1)">1</div>
+        <div class="green-box" onclick="appendToAnswer(2)">2</div>
+        <div class="green-box" onclick="appendToAnswer(3)">3</div>
+        <div class="green-box" onclick="appendToAnswer(4)">4</div>
+        <div class="green-box" onclick="appendToAnswer(5)">5</div>
+        <div class="green-box" onclick="appendToAnswer(6)">6</div>
+        <div class="green-box" onclick="appendToAnswer(7)">7</div>
+        <div class="green-box" onclick="appendToAnswer(8)">8</div>
+        <div class="green-box" onclick="appendToAnswer(9)">9</div>
+        <div class="green-box" onclick="appendToAnswer(0)">0</div>
+        <div class="green-box" onclick="clearAnswer()" id="clear-all">clear</div>
+      </div>
+  
+      <p id="time-left"></p>
+  
+      <div id="final-score"></div>
+      <div id="score" class="hidden"><b>Score:</b> 0</div>
+  
+      <button id="play-again" style="display:none; background-color: rgb(42, 181, 24); color: white; border-radius: 10px; padding: 10px 20px; text-align: center; margin: auto; cursor: pointer;">Play Again</button>
+      <script src="scripts.js"></script>
+      <footer>
+        <hr>
+        <div class="footer">
+            <span class="copyright">© 2020 Play2Learn</span>
+            <nav class="lower-nav">
+                <a href="../contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Play2Learn</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <h1 class="logo">Play2Learn Logo</h1>
+            <ul>
+                <li><a href="../index.html">Home | </a></li>
+                <li class="contains">
+                    <a href="#">Games | </a>
+                    <ul>
+                        <li><a href="../games/anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="../games/math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About | </a></li>
+                <li><a href="../login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Anagram Hunt</h2>
+    <!-- will be developing the Anagram Hunt game in a future project -->
+
+    <footer>
+        <hr>
+        <div class="footer">
+            <span class="copyright">© 2020 Play2Learn</span>
+            <nav class="lower-nav">
+                <a href="../contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Math Facts Practice</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Play2Learn Logo</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Games
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../games/anagram-hunt.html">Anagram Hunt</a>
+                        <a class="dropdown-item" href="../games/math-facts.html">Math Facts Practice</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      </body>
+      
+  </header>
+
+    <h1>Math Facts Practice</h1>
+    <h2>Addition</h2>
+
+    <div id="operation-select-container">
+        <label for="operation-select" class="operation-select-label">Operation:</label>
+        <select id="operation-select" class="operation-select">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        <button id="go" class="green-box" onclick="startGame()">Go</button>
+    </div>
+
+    <div class="instructions">
+        <ol>
+            <li>Select Operation.</li>
+            <li>Press <b>Go.</b></li>
+            <li>How many problems can you solve in 30 seconds?</li>
+        </ol>
+    </div>
+    <div id="question" class="hidden"></div>
+    <input type="text" id="answer" class="input-field hidden" maxlength="1" autofocus>
+    <div id="feedback" class="hidden"></div>
+  
+    <div id="calculator" class="calculator">
+        <div class="green-box" onclick="appendToAnswer(1)">1</div>
+        <div class="green-box" onclick="appendToAnswer(2)">2</div>
+        <div class="green-box" onclick="appendToAnswer(3)">3</div>
+        <div class="green-box" onclick="appendToAnswer(4)">4</div>
+        <div class="green-box" onclick="appendToAnswer(5)">5</div>
+        <div class="green-box" onclick="appendToAnswer(6)">6</div>
+        <div class="green-box" onclick="appendToAnswer(7)">7</div>
+        <div class="green-box" onclick="appendToAnswer(8)">8</div>
+        <div class="green-box" onclick="appendToAnswer(9)">9</div>
+        <div class="green-box" onclick="appendToAnswer(0)">0</div>
+        <div class="green-box" onclick="clearAnswer()" id="clear-all">clear</div>
+      </div>
+  
+      <p id="time-left"></p>
+  
+      <div id="final-score"></div>
+      <div id="score" class="hidden"><b>Score:</b> 0</div>
+  
+      <button id="play-again" style="display:none; background-color: rgb(42, 181, 24); color: white; border-radius: 10px; padding: 10px 20px; text-align: center; margin: auto; cursor: pointer;">Play Again</button>
+      <script src="scripts.js"></script>
+      <footer>
+        <hr>
+        <div class="footer">
+            <span class="copyright">© 2020 Play2Learn</span>
+            <nav class="lower-nav">
+                <a href="../contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            </nav>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Math Facts Practice</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Play2Learn Logo</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Games
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../games/anagram-hunt.html">Anagram Hunt</a>
+                        <a class="dropdown-item" href="../games/math-facts.html">Math Facts Practice</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Math Facts Practice</h1>
+    <h2>Addition</h2>
+
+    <div id="operation-select-container">
+        <label for="operation-select" class="operation-select-label">Operation:</label>
+        <select id="operation-select" class="operation-select">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        <button id="go" class="green-box" onclick="startGame()">Go</button>
+    </div>
+
+    <div class="instructions">
+        <ol>
+            <li>Select Operation.</li>
+            <li>Press <b>Go.</b></li>
+            <li>How many problems can you solve in 30 seconds?</li>
+        </ol>
+    </div>
+
+    <div id="question" class="hidden"></div>
+
+    <input type="text" id="answer" class="input-field hidden" maxlength="1" autofocus>
+    <div id="feedback" class="hidden"></div>
+
+    <div id="calculator" class="calculator">
+        <div class="green-box" onclick="appendToAnswer(1)">1</div>
+        <div class="green-box" onclick="appendToAnswer(2)">2</div>
+        <div class="green-box" onclick="appendToAnswer(3)">3</div>
+        <div class="green-box" onclick="appendToAnswer(4)">4</div>
+        <div class="green-box" onclick="appendToAnswer(5)">5</div>
+        <div class="green-box" onclick="appendToAnswer(6)">6</div>
+        <div class="green-box" onclick="appendToAnswer(7)">7</div>
+        <div class="green-box" onclick="appendToAnswer(8)">8</div>
+        <div class="green-box" onclick="appendToAnswer(9)">9</div>
+        <div class="green-box" onclick="appendToAnswer(0)">0</div>
+        <div class="green-box" onclick="clearAnswer()" id="clear-all">clear</div>
+    </div>
+
+    <p id="time-left"></p>
+
+    <div id="final-score"></div>
+    <div id="score" class="hidden"><b>Score:</b> 0</div>
+
+    <button id="play-again"
+        style="display:none; background-color: rgb(42, 181, 24); color: white; border-radius: 10px; padding: 10px 20px; text-align: center; margin: auto; cursor: pointer;">
+        Play Again
+    </button>
+
+    <footer>
+        <hr>
+        <div class="footer">
+            <span class="copyright">© 2020 Play2Learn</span>
+            <nav class="lower-nav">
+                <a href="../contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter"><i
+                        class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+        <title>Play2Learn</title>
+    </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Play2Learn Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Games
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="games/anagram-hunt.html">Anagram Hunt</a></li>
+                    <li><a class="dropdown-item" href="games/math-facts.html">Math Facts Practice</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+    <div class="container mt-5">
+      <div id="login-container">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title text-center">Log In</h5>
+                  <div class="row">
+                    <form id="loginForm">
+                        <div class="form-group col-md-6 mx-auto">
+                            <input type="email" class="form-control" placeholder="Email" name="email" required>
+                        </div>  
+                        <div class="form-group col-md-6 mx-auto">
+                            <input type="password" class="form-control" placeholder="Password" name="password" required>
+                        </div>
+                        <div class="form-group col-md-1 mx-auto">
+                            <button type="submit" class="btn btn-primary text-end">Log in</button>
+                        </div>
+                    </form>
+                </div>
+                
+                    <div class="text-center mt-3">
+                        <small>Need an account? <a id="register-link" href="#">Register.</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="register-container" class="d-none">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title text-center">Register</h5>
+                  <form id="registerForm">
+                      <div class="row">
+                          <div class="form-group col-md-6 mx-auto">
+                              <input type="email" class="form-control" placeholder="Email" name="email" required>
+                          </div>
+                          <div class="form-group col-md-6 mx-auto">
+                              <input type="password" class="form-control" placeholder="Password" name="password" required>
+                          </div>
+                          <div class="form-group col-md-6 mx-auto">
+                              <input type="password" class="form-control" placeholder="Confirm Password" name="password-confirm" required>
+                          </div>
+                          <div class="form-group col-md-6 mx-auto">
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="agreement">
+                                  <label class="form-check-label" for="agreement">I am over 13 and liking games</label>
+                              </div>
+                          </div>
+                      </div>
+                      <button type="submit" class="btn btn-secondary btn-block">Register</button>
+                  </form>
+                  <div class="text-center mt-3">
+                      <small>You already have an account? <a id="login-link" href="#">Log in.</a></small>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+
+  <footer class="footer bg-light mt-5 p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <span>&copy; 2020 Play2Learn</span>
+        </div>
+        <div class="col-6 text-end">
+          <a href="../HTML/contact-us.html" title="Contact Us"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>        
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    var $jq = jQuery.noConflict();
+</script>
+<script src="script.js"></script>
+      </body>
+</html>
+
+// Get form and action switch elements
+let loginContainer = document.getElementById('login-container');
+let registerContainer = document.getElementById('register-container');
+let loginLink = document.getElementById('login-link');
+let registerLink = document.getElementById('register-link');
+
+// Add event listeners to switch between forms
+registerLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  registerContainer.style.display = 'block';
+  loginContainer.style.display = 'none';
+});
+
+loginLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  loginContainer.style.display = 'block';
+  registerContainer.style.display = 'none';
+});
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/f18b52f49a.js" crossorigin="anonymous"></script>
+    <title>Play2Learn</title>
+</head>
+
+<body>
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Play2Learn Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Games
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../games/anagram-hunt.html">Anagram Hunt</a>
+                            <a class="dropdown-item" href="../games/math-facts.html">Math Facts Practice</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container h-100">
+        <div class="row h-100">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h2>Anagram Hunt</h2>
+            </div>
+        </div>
+    </main>
+
+    <div id="app">
+        <div id="game-container" class="text-center">
+                   <template v-if="timeLeft === 0">
+                     <div>
+                       <h2>Anagram Hunt</h2>
+                       <h2>Time's Up!</h2>
+                       <strong class="big">You Got</strong>
+                       <div class="huge">{{ score }}</div>
+                       <strong class="big">Anagrams</strong>
+                       <button
+                         class="btn btn-primary form-control m-1"
+                         v-on:click="restart()"
+                       >
+                         Play Again
+                       </button>
+                       <button
+                         class="btn btn-secondary form-control m-1"
+                         v-on:click="config()"
+                        >
+                             Back to Start Screen
+                           </button>
+                         </div>
+                       </template>
+                       <div v-if="timeLeft > 0">
+                     <div class="row border-bottom" id="scoreboard">
+                       <div class="col px-3 text-left">
+                       <GameScore :score="score" />
+                     </div>
+                     <div class="col px-3 text-right">
+                     <GameTimer :timeLeft="timeLeft" />
+                      </div>
+                     </div>
+                     <div :class="equationClass" id="equation">
+                     <p class="anagram-word">{{ currentWord }} ({{ remainingAnagrams }} left)</p>
+                       <GameEquation
+                         :question="currentWord"
+                         :answer="userInput"
+                         :answered="answered"
+                       />
+                     </div>
+                     <div class="row" id="buttons">
+                       <div class="col">
+                         <input
+                         type="text"
+                           v-model="userInput"
+                           @keyup.enter="checkAnswer"
+                           :disabled="answered"
+                           placeholder="type here"
+                         />
+                     
+                       </div>
+                     </div>
+                     <div class="completed-anagrams">
+                       <p v-for="(anagram, index) in completedAnagrams" :key="anagram">
+                       {{ index + 1 }}. {{ anagram }}</p>
+                     </div>
+                   </div>
+                 </div>
+                 <script>
+                 const anagrams = {
+                    5: [
+                      [
+                        "abets",
+                        "baste",
+                        "betas",
+                        "beast",
+                        "beats"
+                      ],
+                      [
+                        "acres",
+                        "cares",
+                        "races",
+                        "scare"
+                      ],
+                      [
+                        "alert",
+                        "alter",
+                        "later"
+                      ],
+                      [
+                        "angel",
+                        "angle",
+                        "glean"
+                      ],
+                      [
+                        "baker",
+                        "brake",
+                        "break"
+                      ],
+                      [
+                        "bared",
+                        "beard",
+                        "bread",
+                        "debar"
+                      ],
+                      [
+                        "dater",
+                        "rated",
+                        "trade",
+                        "tread"
+                      ],
+                      [
+                        "below",
+                        "bowel",
+                        "elbow"
+                      ],
+                      [
+                        "caret",
+                        "cater",
+                        "crate",
+                        "trace",
+                        "react"
+                      ]
+                    ],
+                    6: [
+                      [
+                        "arrest",
+                        "rarest",
+                        "raster",
+                        "raters",
+                        "starer"
+                      ],
+                      [
+                        "carets",
+                        "caters",
+                        "caster",
+                        "crates",
+                        "reacts",
+                        "recast",
+                        "traces"
+                      ],
+                      [
+                        "canter",
+                        "nectar",
+                        "recant",
+                        "trance"
+                      ],
+                      [
+                        "danger",
+                        "gander",
+                        "garden",
+                        "ranged"
+                      ],
+                      [
+                        "daters",
+                        "trades",
+                        "treads",
+                        "stared"
+                      ]
+                    ],
+                    7: [
+                      [
+                        "allergy",
+                        "gallery",
+                        "largely",
+                        "regally"
+                      ],
+                      [
+                        "aspired",
+                        "despair",
+                        "diapers",
+                        "praised"
+                      ],
+                      [
+                        "claimed",
+                        "decimal",
+                        "declaim",
+                        "medical"
+                      ],
+                      [
+                        "dearths",
+                        "hardest",
+                        "hatreds",
+                        "threads",
+                        "trashed"
+                      ],
+                      [
+                        "detains",
+                        "instead",
+                        "sainted",
+                        "stained"
+                      ]
+                    ],
+                    8: [
+                      [
+                        "parroted",
+                        "predator",
+                        "prorated",
+                        "teardrop"
+                      ],
+                      [
+                        "repaints",
+                        "painters",
+                        "pantries",
+                        "pertains"
+                      ],
+                      [
+                        "restrain",
+                        "retrains",
+                        "strainer",
+                        "terrains",
+                        "trainers"
+                      ],
+                      [
+                        "construe",
+                        "counters",
+                        "recounts",
+                        "trounces"
+                      ]
+                    ]
+                  };
+                
+                  export default anagrams;
+                  </script>
+
+<footer class="footer bg-light mt-5 p-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <span>&copy; 2020 Play2Learn</span>
+      </div>
+      <div class="col-6 text-end">
+        <a href="../HTML/contact-us.html" title="Contact Us"><i class="fa-solid fa-square-envelope"></i></a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-square-twitter"></i></a>
+        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>  
+</body>
+</html>

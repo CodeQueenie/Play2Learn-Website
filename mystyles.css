@@ -1,0 +1,9 @@
+/* Anagram Hunt */
+
+html, body {
+    height: 100%;
+    color: blue;
+}
+.main {
+    min-height: calc(100% - var(--header-height) - var(--footer-height));
+}
